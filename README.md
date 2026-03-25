@@ -80,7 +80,7 @@ Primary references used throughout the live scripts (see scripts for specific re
  
 - **P. Liu** — *Aerodynamics*, Springer, [doi:10.1007/978-981-19-4586-1](https://doi.org/10.1007/978-981-19-4586-1 Add to Citavi project by DOI) (Ch. 12: supersonic lift/drag, swept-wing corrections, transonic drag rise)
 - **E. A. Bonney** — *Engineering Supersonic Aerodynamics* (wave drag decomposition, skin friction charts, airfoil shape factors K₁ and τ)
-- **Stanford AA200b Lecture Notes** — [Supersonic thin-airfoil theory](http://aero-comlab.stanford.edu/aa200b/lect_notes/lect5.pdf) (linearized pressure coefficient, supersonic CoP)
+- **Stanford AA200b Lecture Notes** — (linearized pressure coefficient, supersonic CoP)
 - **NASA TN** — [NTRS 19880008231](https://ntrs.nasa.gov/api/citations/19880008231/downloads/19880008231.pdf) and [NTRS 19800014762](https://ntrs.nasa.gov/api/citations/19800014762/downloads/19800014762.pdf) (center of pressure variation with Mach number and aspect ratio)
  
 ---

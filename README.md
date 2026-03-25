@@ -2,7 +2,7 @@
 
 **Analytical Aerodynamic Load Calculator for Rocket Fins**
 
-A MATLAB GUI applet that computes the aerodynamic forces acting on a single rocket fin across its entire flight profile — from subsonic through transonic to supersonic regimes. Upload a trajectory CSV, define your fin geometry, and get lift, drag, and moment estimates at every point along the flight envelope.
+A MATLAB GUI applet that computes the aerodynamic forces acting on a single rocket fin across its entire flight profile: from subsonic through transonic to supersonic regimes. Upload a trajectory CSV, define your fin geometry, and get lift, drag, and moment estimates at every point along the flight envelope. The caclulations rely on
 
 > **Disclaimer:** This project was developed as an engineering demonstrator and is not fully validated. Output accuracy has not been verified against simulation or wind tunnel data. Treat results as indicative, not authoritative.
 
@@ -71,6 +71,29 @@ Final output of lift, drag, and moment estimates across the flight profile.
 <img width="557" height="501" alt="Aerodynamic load output plots" src="https://github.com/user-attachments/assets/616d5792-2f73-4ec4-aeca-84ebc7abc5df" />
 
 ---
+ 
+## Theoretical Background
+ 
+The aerodynamic models are rooted in classical analytical methods for thin-airfoil and swept-wing aerodynamics. The supersonic regime relies on linearized supersonic thin-airfoil theory (Ackeret theory) for lift and wave drag, extended with oblique-wing sweep corrections. At high Mach numbers (Ma > 2), the code notes the alternative of Newtonian Impact Theory for hypersonic flow. Skin friction drag is estimated from flat-plate correlations as a function of Reynolds number. The atmosphere is modeled using the ISA standard atmosphere (troposphere only), with dynamic viscosity computed via Sutherland's law.
+ 
+Primary references used throughout the live scripts:
+ 
+- **P. Liu** — *Aerodynamics*, Springer, [doi:10.1007/978-981-19-4586-1](https://doi.org/10.1007/978-981-19-4586-1 Add to Citavi project by DOI) (Ch. 12: supersonic lift/drag, swept-wing corrections, transonic drag rise)
+- **E. A. Bonney** — *Engineering Supersonic Aerodynamics* (wave drag decomposition, skin friction charts, airfoil shape factors K₁ and τ)
+- **Stanford AA200b Lecture Notes** — [Supersonic thin-airfoil theory](http://aero-comlab.stanford.edu/aa200b/lect_notes/lect5.pdf) (linearized pressure coefficient, supersonic CoP)
+- **NASA TN** — [NTRS 19880008231](https://ntrs.nasa.gov/api/citations/19880008231/downloads/19880008231.pdf) and [NTRS 19800014762](https://ntrs.nasa.gov/api/citations/19800014762/downloads/19800014762.pdf) (center of pressure variation with Mach number and aspect ratio)
+ 
+---
+
+## Limitations
+
+- Atmosphere model valid only in the troposphere (< 11 km altitude)
+- No viscous interaction or real-gas effects
+- Transonic regime uses simplified interpolation, not full nonlinear methods
+- Single isolated fin — no fin-body interference or multi-fin effects
+- Not validated against CFD, wind tunnel, or flight data
+
+---
 
 ## Project Structure
 
@@ -85,10 +108,10 @@ App/
 ├── plotFinShapeSupersonic.m           # Supersonic fin plot with Mach cones
 │
 ├── calculateMachNumber.m              # Local Mach from speed & altitude (ISA)
-├── calculateAirDensity.m             # ISA air density model
+├── calculateAirDensity.m              # ISA air density model
 ├── calculateReynoldsNumber.m          # Re via Sutherland's viscosity law
 ├── calculateCenterOfPressure.m        # Spanwise CoP for different planforms
-├── calculateFinArea.m                 # Trapezoidal planform area
+├── calculateFinArea.m                 # General planform fin area
 ├── classifyFinShape.m                 # Trailing-edge sweep classification
 ├── machConeAngle.m                    # Mach cone half-angle
 │
@@ -120,16 +143,6 @@ The trajectory file must contain two columns with these exact headers:
 | 0.0          | 0.0         |
 | 30.3         | 10.4        |
 | ...          | ...         |
-
----
-
-## Limitations
-
-- Atmosphere model valid only in the troposphere (< 11 km altitude)
-- No viscous interaction or real-gas effects
-- Transonic regime uses simplified interpolation, not full nonlinear methods
-- Single isolated fin — no fin-body interference or multi-fin effects
-- Not validated against CFD, wind tunnel, or flight data
 
 ---
  

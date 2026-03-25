@@ -76,7 +76,7 @@ Final output of lift, drag, and moment estimates across the flight profile.
  
 The aerodynamic models are rooted in classical analytical methods for thin-airfoil and swept-wing aerodynamics. The supersonic regime relies on linearized supersonic thin-airfoil theory (Ackeret theory) for lift and wave drag, extended with oblique-wing sweep corrections. At high Mach numbers (Ma > 2), the code notes the alternative of Newtonian Impact Theory for hypersonic flow. Skin friction drag is estimated from flat-plate correlations as a function of Reynolds number. The atmosphere is modeled using the ISA standard atmosphere (troposphere only), with dynamic viscosity computed via Sutherland's law.
  
-Primary references used throughout the live scripts:
+Primary references used throughout the live scripts (see scripts for specific reference):
  
 - **P. Liu** — *Aerodynamics*, Springer, [doi:10.1007/978-981-19-4586-1](https://doi.org/10.1007/978-981-19-4586-1 Add to Citavi project by DOI) (Ch. 12: supersonic lift/drag, swept-wing corrections, transonic drag rise)
 - **E. A. Bonney** — *Engineering Supersonic Aerodynamics* (wave drag decomposition, skin friction charts, airfoil shape factors K₁ and τ)

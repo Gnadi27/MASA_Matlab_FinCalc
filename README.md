@@ -10,7 +10,7 @@ A MATLAB GUI applet that computes the aerodynamic forces acting on a single rock
 
 ## Features
 
-- **Flight regime detection** — automatically classifies trajectory segments into subsonic (Ma < 0.8), transonic (0.8 < Ma < 1.2), and supersonic (Ma > 1) and applies the appropriate aerodynamic theory to each
+- **Flight regime detection** — automatically classifies trajectory segments into subsonic (Ma < 0.8), transonic (0.8 < Ma < 1.2), and supersonic (Ma > 1.2) and applies the appropriate aerodynamic theory to each
 - **Multiple fin planforms** — supports trapezoidal, clipped-delta, symmetric forward-swept, and parallelogram (aft-swept) geometries with automatic trailing-edge classification
 - **Regime-specific load models** — uses linearized theory for subsonic and supersonic flow, with separate handling for transonic conditions
 - **Mach cone visualization** — overlays Mach cones on the fin planform at peak Mach number, identifying whether leading and trailing edges are subsonic or supersonic

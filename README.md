@@ -4,7 +4,7 @@
 
 A MATLAB GUI applet that computes the aerodynamic forces acting on a single rocket fin across its entire flight profile: from subsonic through transonic to supersonic regimes. Upload a trajectory CSV, define your fin geometry, and get lift, drag, and moment estimates at every point along the flight envelope. The caclulations rely on
 
-> **Disclaimer:** This project was developed as an engineering demonstrator and is not fully validated. Output accuracy has not been verified against simulation or wind tunnel data. Treat results as indicative, not authoritative.
+> **Disclaimer:** Like with any good project this one was also never really fully finished up and fleshed out. This project was developed as an engineering demonstrator and is not fully validated. Output accuracy has not been verified against simulation or wind tunnel data. Treat results as indicative, not authoritative.
 
 ---
 

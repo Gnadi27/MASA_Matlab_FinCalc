@@ -19,21 +19,27 @@ To Run:
 
 ## What to expect to see on 
 
-GUI with exemplary input
+### GUI with exemplary input
+
 <img width="596" height="327" alt="image" src="https://github.com/user-attachments/assets/55993355-e6db-4b0c-aecf-fe4380dba7e2" />
 
-Uploading a trajectory provides plots about the flight profile and categorization of flight regimes
+### Uploading a trajectory provides plots about the flight profile and categorization of flight regimes
+
 <img width="1119" height="450" alt="image" src="https://github.com/user-attachments/assets/ed80c6ec-0301-4c5c-ba48-0fccf8778498" />
 
-Different fin shape categorize to select and then geometrically define
+### Different fin shape categorize to select and then geometrically define
+
 <img width="447" height="217" alt="image" src="https://github.com/user-attachments/assets/173e44eb-873a-4f2c-abff-8df248898d45" />
 
-After calculating, warning about broken assumptions are diplayed
+### After calculating, warning about broken assumptions are diplayed
+
 <img width="867" height="111" alt="image" src="https://github.com/user-attachments/assets/cdc95a7a-27f7-4a51-9063-0b7d69e03071" />
 
-Analysis output on the planar fin
+### Analysis output on the planar fin
+
 <img width="1109" height="500" alt="image" src="https://github.com/user-attachments/assets/2c718fa8-47ef-4377-a414-9bd9fc432fee" />
 <img width="600" height="231" alt="image" src="https://github.com/user-attachments/assets/523361c9-bc14-4c68-84eb-c5d586b56b33" />
 
-Output of calculated aerodynaMic loads
+### Output of calculated aerodynaMic loads
+
 <img width="557" height="501" alt="image" src="https://github.com/user-attachments/assets/616d5792-2f73-4ec4-aeca-84ebc7abc5df" />

@@ -132,7 +132,7 @@ The trajectory file must contain two columns with these exact headers:
 - Not validated against CFD, wind tunnel, or flight data
 
 ---
-
-## License
-
-This project is provided as-is for educational and demonstration purposes.
+ 
+## Note
+ 
+This project was created with the assistance of AI tools.
